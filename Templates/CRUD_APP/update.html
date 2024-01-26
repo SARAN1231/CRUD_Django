@@ -1,0 +1,17 @@
+<html>
+  {% extends "CRUD_APP/base.html" %}
+  <head> </head>
+  <body>
+    {% block content %}
+    <h1>update Student Details</h1>
+    <form method = 'POST'>
+ sno : <input type='text' name='sno' value={{student.sno}}>
+ sname : <input type='text' name='sno' value={{student.sname}}>
+ sclass : <input type='text' name='sno' value={{student.sclass}}>
+ scity : <input type='text' name='sno' value={{student.scity}}>
+   {% csrf_token %}
+ <input type='submit' value = update>
+    </form>
+    {% endblock content %}
+  </body>
+</html>
